@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.container {
+  /* background-color: rgba(116, 1, 1, 0.705); */
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 10px 0px #007bff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  /* Pastikan form berada di atas elemen lain */
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 30px;
+  /* text-shadow:5px 4px 7px #ae00ff; */
+  color: rgba(0, 0, 0, 0.541);
+
+}
+
+input {
+  /* background-color: rgba(0, 0, 0, 0.199); */
+  display: block;
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #007bff;
+  border-radius: 3px;
+  /* box-shadow: 0px 0px 5px 0px #00b7ff; */
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.541);
+}
+
+input::placeholder {
+  text-transform: capitalize;
+  /* color: white; */
+  /* text-align: center; */
+}
+input:focus {
+  outline: none;
+}
+
+input:hover{
+  /* border: 2px solid #00b7ff; */
+  box-shadow: 0px 0px 5px 0px #007bff;
+}
+
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;;
+  cursor: pointer;
+  font-weight: 600;
+  outline: none;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+}
+
+.btn:hover{
+  box-shadow: 0px 0px 5px 0px #007bff;
+}
+
+#enterButton {
+  background-color: #007bff;
+  border: none;
+}
+
+#backButton {
+  background-color: #dc3545;
+  border: none;
+  
+}
+
+.swal-button-warning {
+  outline: none;
+  border: none ;
+  background-color: #dc3545;
+  /* box-shadow: 0px 0px 10px 0px #007bff; */
+}
+.swal-button-warning:hover{
+  outline: none;
+  box-shadow: 0px 0px 10px 0px #dc3545;
+}
+.swal-popup-warning{
+  box-shadow: 0px 0px 10px 0px #dc3545;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+.swal-icon-warning{
+  color: #dc3545 !important;
+  border: 4px #dc3545 solid !important;
+  box-shadow: 0px 0px 10px 0px #dc3545 !important;
+}
+
+.swal-popup-success{
+  box-shadow: 0px 0px 10px 0px #4caf50 !important;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+.swal-button-success{
+  background-color: #4caf50;
+}
+.swal-button-success:hover{
+  box-shadow: 0px 0px 10px 0px #4caf50 !important;
+}
+
+.swal2-icon.swal2-success [class^='swal2-success-line'] {
+  background-color: #4CAF50; /* Warna garis ikon sukses */
+}
+.swal2-icon.swal2-success .swal2-success-ring {
+  border: 4px solid #4caf50;
+  box-shadow: 0px 0px 10px 0px #4caf50 !important;
+}
